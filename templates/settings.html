@@ -1,0 +1,9 @@
+{% import "_includes/forms" as forms %}
+
+<p>Please see <a href="https://blog.vanillaforums.com/jsconnect-technical-documentation/" target="_blank">jsConnect Technical Documentation </a> for details on how to set up Vanillaforums to use SSO</p>
+
+{{ forms.textField({
+'label': 'Vanilla Forums jsConnect Client ID', 'instructions': 'Enter your Vanilla Forums jsConnect Client ID', 'id': 'vanillaforumsClientID', 'name': 'vanillaforumsClientID', 'value': settings['vanillaforumsClientID']}) }}
+
+{{ forms.textField({
+'label': 'Vanilla Forums jsConnect Secret', 'instructions': 'Enter your Vanilla Forums jsConnect Secret.', 'id': 'vanillaforumsSecret', 'name': 'vanillaforumsSecret', 'value': settings['vanillaforumsSecret']}) }}

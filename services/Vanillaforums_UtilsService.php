@@ -20,9 +20,10 @@ class Vanillaforums_UtilsService extends BaseApplicationComponent
 		if ($currentUser)
 		{
 			$data['uniqueid'] = $currentUser->id;
-			$data['name'] = $currentUser->profileUserName;
+			$data['name'] = $currentUser->getFullName();
 			$data['email'] = $currentUser->email;
-			$data['photourl'] = $currentUser->getPhotoUrl();
+			if ($currentUser->getPhotoUrl())
+				$data['photourl'] = $currentUser->getPhotoUrl();
 		}
 		
 		$vanillaforumsClientID = $settings['vanillaforumsClientID'];
@@ -55,9 +56,10 @@ class Vanillaforums_UtilsService extends BaseApplicationComponent
 		if ($currentUser)
 		{
 			$data['uniqueid'] = $currentUser->id;
-			$data['name'] = $currentUser->profileUserName;
+			$data['name'] = $currentUser->getFullName();
 			$data['email'] = $currentUser->email;
-			$data['photourl'] = $currentUser->getPhotoUrl();
+			if ($currentUser->getPhotoUrl())
+				$data['photourl'] = $currentUser->getPhotoUrl();
 		}
 		
 		$vanillaforumsClientID = $settings['vanillaforumsClientID'];

@@ -46,6 +46,10 @@ That will output an encoded string of characters that should look something like
 
 ## Changelog
 
-### 1.0.0 -- 2015-08-04
+### 1.0.1 -- 2015.11.23
+
+* Added support for Craft 2.5 new plugin features
+
+### 1.0.0 -- 2015.08.04
 
 * Initial release

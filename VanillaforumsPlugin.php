@@ -8,7 +8,27 @@ class VanillaforumsPlugin extends BasePlugin
         return Craft::t('Vanillaforums');
     }
 
-    function getVersion()
+    public function getDescription()
+    {
+        return 'Single Sign On plugin for VanillaForums/jsConnect and CraftCMS.';
+    }
+    
+    public function getDocumentationUrl()
+    {
+        return 'https://github.com/khalwat/vanillaforums/blob/master/README.md';
+    }
+    
+    public function getReleaseFeedUrl()
+    {
+        return 'https://github.com/khalwat/vanillaforums/blob/master/releases.json';
+    }
+    
+    public function getVersion()
+    {
+        return '1.0.1';
+    }
+
+    public function getSchemaVersion()
     {
         return '1.0.0';
     }
@@ -35,19 +55,19 @@ class VanillaforumsPlugin extends BasePlugin
         return new VanillaforumsTwigExtension();
     }
 
-	protected function defineSettings()
-	{
-		return array(
-			'vanillaforumsClientID' => array(AttributeType::String, 'label' => 'Vanilla Forums jsConnect Client ID', 'default' => ''),
-			'vanillaforumsSecret' => array(AttributeType::String, 'label' => 'Vanilla Forums jsConnect Secret', 'default' => ''),
-		);
-	}
+    protected function defineSettings()
+    {
+        return array(
+            'vanillaforumsClientID' => array(AttributeType::String, 'label' => 'Vanilla Forums jsConnect Client ID', 'default' => ''),
+            'vanillaforumsSecret' => array(AttributeType::String, 'label' => 'Vanilla Forums jsConnect Secret', 'default' => ''),
+        );
+    }
 
     public function getSettingsHtml()
-	{
+    {
        return craft()->templates->render('vanillaforums/settings', array(
            'settings' => $this->getSettings()
        ));
-	}
+    }
 
 }

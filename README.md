@@ -1,4 +1,4 @@
-### Vanillaforums plugin for Craft CMS
+# Vanillaforums plugin for Craft CMS
 
 A simple plugin for integrating [VanillaForums](http://vanillaforums.org/) into [Craft CMS](http://buildwithcraft.com) websites, including Single Sign On (SSO) for site-wide SSO, as well as embedded SSO.
 
@@ -8,7 +8,7 @@ A simple plugin for integrating [VanillaForums](http://vanillaforums.org/) into 
 2.  -OR- do a `git clone https://github.com/khalwat/vanillaforums.git` directly into your `craft/plugins` folder.  You can then update it with `git pull`
 3. Install plugin in the Craft Control Panel under Settings > Plugins
 
-###Configuring Vanillaforums###
+## Configuring Vanillaforums
 
 1. Install jsConnect.  Make sure you have installed the [jsConnect plugin](http://vanillaforums.org/addon/jsconnect-plugin), and follow the documentation for [Vanilla SSO](http://docs.vanillaforums.com/features/sso/) setup.
 
@@ -18,7 +18,7 @@ A simple plugin for integrating [VanillaForums](http://vanillaforums.org/) into 
 
 4. Next in the Craft Admin CP, go to Settings->Plugins->Vanillaforums and enter the same Client ID and Secret from step 3
 
-#### Site-Wide Single Sign On (SSO) ####
+### Site-Wide Single Sign On (SSO)
 
 Assuming you've set up everything properly, all you have to do for [Site-Wide SSO](https://blog.vanillaforums.com/jsconnect-technical-documentation/) is create a template in your CraftCMS that has only the following in it:
 
@@ -31,7 +31,7 @@ The fill in the **Authenticate Url** field in your jsConnect connection with the
     test({"uniqueid":"1","name":"Admin","email":"admin@testsite.com","photourl":"http:\/\/testsite.com\/cpresources\/userphotos\/admin\/100\/profilepic.jpg?x=abF7BLdua","client_id":"12345678","signature":"b1670c794d13a5214b3d0ddd3d9a2293"})
 
 
-#### Embedded Single Sign On (SSO) ####
+### Embedded Single Sign On (SSO)
 
 Assuming you've set up everything properly, all you have to do for [Embedded SSO](https://blog.vanillaforums.com/jsconnect-technical-documentation-for-embedded-sso/) (for things like blog comments, etc.) is to go to your VanillaForums AdminCP, click on Forum->Blog Comments->Universial Code and follow the instructions there.
 

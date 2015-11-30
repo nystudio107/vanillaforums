@@ -12,7 +12,7 @@ A simple plugin for integrating [VanillaForums](http://vanillaforums.org/) into 
 
 1. Install jsConnect.  Make sure you have installed the [jsConnect plugin](http://vanillaforums.org/addon/jsconnect-plugin), and follow the documentation for [Vanilla SSO](http://docs.vanillaforums.com/features/sso/) setup.
 
-2. jsConnect Auto SignIn.  You might also consider installing and using the [Vanilla jsConnect Auto SignIn](http://vanillaforums.org/addon/jsconnectautosignin-plugin) to make the SSO process smoother for the end user. 
+2. jsConnect Auto SignIn.  You might also consider installing and using the [Vanilla jsConnect Auto SignIn](http://vanillaforums.org/addon/jsconnectautosignin-plugin) plugin to make the SSO process smoother for the end user. 
 
 3. Go to your Vanillaforums AdminCP, under Users click on **jsConnect**, then click on **Add Connection**.  Click on **Generate Client ID and Secret** to generate random Client ID and Secret fields, and then fill in the rest of the fields as appropriate
 

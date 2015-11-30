@@ -26,7 +26,7 @@ Assuming you've set up everything properly, all you have to do for [Site-Wide SS
 
 This will generate a properly configured `jsonp` response for the jsConnect SSO.
 
-The fill in the **Authenticate Url** field in your jsConnect connection with the URL to this template.  You can test that it's working by clicking on the **Test URL** link under Users->jsConnect, it should look something like this:
+Then fill in the **Authenticate Url** field in your jsConnect connection with the URL to this template.  You can test that it's working by clicking on the **Test URL** link under Users->jsConnect, it should look something like this:
 
     test({"uniqueid":"1","name":"Admin","email":"admin@testsite.com","photourl":"http:\/\/testsite.com\/cpresources\/userphotos\/admin\/100\/profilepic.jpg?x=abF7BLdua","client_id":"12345678","signature":"b1670c794d13a5214b3d0ddd3d9a2293"})
 

@@ -20,7 +20,7 @@ class Vanillaforums_UtilsService extends BaseApplicationComponent
 		if ($currentUser)
 		{
 			$data['uniqueid'] = $currentUser->id;
-			$data['name'] = $currentUser->getFullName();
+			$data['name'] = $currentUser->username();
 			$data['email'] = $currentUser->email;
 			if ($currentUser->getPhotoUrl())
 				$data['photourl'] = $currentUser->getPhotoUrl();

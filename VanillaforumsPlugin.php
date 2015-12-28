@@ -20,7 +20,7 @@ class VanillaforumsPlugin extends BasePlugin
     
     public function getReleaseFeedUrl()
     {
-        return 'https://github.com/khalwat/vanillaforums/blob/master/releases.json';
+        return 'https://raw.githubusercontent.com/khalwat/vanillaforums/master/releases.json';
     }
     
     public function getVersion()

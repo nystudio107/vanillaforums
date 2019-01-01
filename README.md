@@ -1,3 +1,9 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+# DEPRECATED
+
+This Craft 2.x plugin is no longer supported, but it is fully functional, and you may continue to use it as you see fit. The license also allows you to fork it and make changes as needed for legacy support reasons.
+
 # Vanillaforums plugin for Craft CMS
 
 A simple plugin for integrating [VanillaForums](http://vanillaforums.org/) into [Craft CMS](http://buildwithcraft.com) websites, including Single Sign On (SSO) for site-wide SSO, as well as embedded SSO.
